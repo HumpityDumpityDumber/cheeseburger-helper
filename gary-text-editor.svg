@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.28 23.89">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #000;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        font-family: GoogleSans-Rounded, 'Google Sans Rounded';
+        font-size: 2.46px;
+      }
+
+      .cls-6 {
+        fill: #4d4d4d;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-7 {
+        letter-spacing: -.14em;
+      }
+
+      .cls-3 {
+        stroke-linejoin: round;
+      }
+
+      .cls-3, .cls-4 {
+        stroke-linecap: round;
+      }
+
+      .cls-8 {
+        fill: #666;
+      }
+
+      .cls-9 {
+        fill: #333;
+      }
+
+      .cls-10 {
+        fill: #1a1a1a;
+      }
+
+      .cls-11 {
+        fill: #999;
+      }
+
+      .cls-12 {
+        fill: #b3b3b3;
+      }
+
+      .cls-13 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-14 {
+        fill: gray;
+      }
+    </style>
+  </defs>
+  <ellipse class="cls-2" cx="4.36" cy="5.35" rx="3.86" ry="3.64"/>
+  <ellipse class="cls-2" cx="4.42" cy="12.77" rx="3" ry="2.54"/>
+  <circle class="cls-2" cx="12.56" cy="11.91" r="3.41"/>
+  <path class="cls-1" d="M4.36,8.99c-1.35-.02-1.38,1.22,0,1.24"/>
+  <line class="cls-4" x1="18.95" y1="8.49" x2="18.95" y2="15.32"/>
+  <path class="cls-4" d="M18.95,12.96c0-2.39,1.74-4.47,4.17-4.47"/>
+  <line class="cls-4" x1="15.97" y1="11.8" x2="16.52" y2="15.32"/>
+  <path class="cls-3" d="M4.36,1.7c.58-.05,1.14-.33,1.62-1.2"/>
+  <line class="cls-3" x1="1.42" y1="17.37" x2="30.3" y2="17.37"/>
+  <text class="cls-5" transform="translate(1.92 21.39)"><tspan x="0" y="0">[”TEXT</tspan><tspan class="cls-7" x="7.55" y="0">”</tspan><tspan x="8.2" y="0">, ”EDI</tspan><tspan class="cls-13" x="14.05" y="0">T</tspan><tspan x="15.3" y="0">OR”]</tspan></text>
+  <path class="cls-3" d="M32.78,11.36c0,2.22-1.8,4.01-4.01,4.01s-4.01-1.8-4.01-4.01"/>
+  <path class="cls-3" d="M32.78,19.38c0,2.22-1.8,4.01-4.01,4.01s-4.01-1.8-4.01-4.01"/>
+  <line class="cls-3" x1="32.78" y1="19.38" x2="32.78" y2="11.36"/>
+  <circle cx="28.76" cy="9.29" r=".69"/>
+  <circle class="cls-10" cx="30.22" cy="9.9" r=".69"/>
+  <circle class="cls-9" cx="30.83" cy="11.36" r=".69"/>
+  <circle class="cls-6" cx="30.22" cy="12.81" r=".69"/>
+  <circle class="cls-8" cx="28.76" cy="13.42" r=".69"/>
+  <circle class="cls-14" cx="27.31" cy="12.81" r=".69"/>
+  <circle class="cls-11" cx="26.7" cy="11.36" r=".69"/>
+  <circle class="cls-12" cx="27.31" cy="9.9" r=".69"/>
+</svg>
