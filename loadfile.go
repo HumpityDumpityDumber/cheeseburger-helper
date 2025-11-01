@@ -1,12 +1,15 @@
 package main
 
 import (
+	"bytes"
 	"fmt"
+	"io"
 	"os"
 	"path/filepath"
 	"sort"
 	"strings"
 
+	"github.com/andybalholm/brotli"
 	"github.com/vmihailenco/msgpack/v5"
 )
 
@@ -41,7 +44,7 @@ func GetTextFromFiles(fileArg string) ([]string, error) {
 
 		for _, name := range names {
 			ext := strings.ToLower(filepath.Ext(name))
-			if ext != ".msgpack" && ext != ".mp" {
+			if ext != ".msgpackz" {
 				continue
 			}
 			path := filepath.Join(fileArg, name)
@@ -64,11 +67,19 @@ func GetTextFromFiles(fileArg string) ([]string, error) {
 	return allTexts, nil
 }
 
-// loadMsgPackFile loads a MessagePack file and returns the string slice
+// loadMsgPackFile loads a Brotli-compressed MessagePack file and returns the string slice
 func loadMsgPackFile(filePath string) ([]string, error) {
-	data, err := os.ReadFile(filePath)
+	compressedData, err := os.ReadFile(filePath)
 	if err != nil {
 		return nil, fmt.Errorf("read file %s: %w", filePath, err)
+	}
+
+	// Decompress with Brotli
+	brotliReader := brotli.NewReader(bytes.NewReader(compressedData))
+
+	data, err := io.ReadAll(brotliReader)
+	if err != nil {
+		return nil, fmt.Errorf("decompress %s: %w", filePath, err)
 	}
 
 	var texts []string

@@ -45,5 +45,5 @@ func main() {
 		return
 	}
 
-	fmt.Printf("saved to gary-output.msgpack\n")
+	fmt.Printf("saved to gary-output.msgpackz\n")
 }
