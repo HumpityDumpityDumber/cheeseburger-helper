@@ -2,3 +2,7 @@ gary-output
 
 # Binaries
 *.exe
+
+# MessagePack files
+*.msgpack
+*.mp

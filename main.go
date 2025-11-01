@@ -8,7 +8,7 @@ import (
 
 func main() {
 	var fileArg string
-	flag.StringVar(&fileArg, "file", "", "optional file or directory path")
+	flag.StringVar(&fileArg, "file", "", "optional msgpack file or directory path")
 	flag.Parse()
 
 	fmt.Println(" ::::::::      :::     :::::::::  :::   ::: ")
@@ -25,25 +25,25 @@ func main() {
 	time.Sleep(100 * time.Millisecond)
 	time.Sleep(2 * time.Second)
 
-	// get text from provided image(s) (may be empty)
+	// get text from provided msgpack file(s) (may be empty)
 	texts, err := GetTextFromFiles(fileArg)
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
 
-	// run interactive append loop (renders escaped output while typing)
+	// run interactive append loop
 	texts, err = InteractiveAppend(texts)
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
 
-	// save everything into output/
-	if err := SaveAll("gary-output", texts); err != nil {
+	// save everything as gary-output.msgpack
+	if err := SaveAllTextsToMsgPack(texts); err != nil {
 		fmt.Println(err)
 		return
 	}
 
-	fmt.Printf("files saved to %s\n", "gary-output/")
+	fmt.Printf("saved to gary-output.msgpack\n")
 }

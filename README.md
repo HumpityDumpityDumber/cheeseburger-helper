@@ -3,8 +3,6 @@
 
 # Installation
 
-Tnstall the Tesseract ocr program and make sure it is in your path. Make sure English language data is also installed for Tesseract.
-
 run
 ```nushell
 go build
